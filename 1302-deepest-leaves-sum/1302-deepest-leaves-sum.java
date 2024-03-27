@@ -18,7 +18,7 @@ class Solution {
         int deepestsum=0;
         int depth=0;
         int currentdepth;
-        Deque<Pair<TreeNode,Integer>> stack = new ArrayDeque<>();
+        Stack<Pair<TreeNode,Integer>> stack = new Stack<>();
         stack.push(new Pair(root,0));
         
         while(!stack.isEmpty())
