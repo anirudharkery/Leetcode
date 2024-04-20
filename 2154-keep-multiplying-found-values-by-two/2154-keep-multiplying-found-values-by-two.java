@@ -1,7 +1,7 @@
 class Solution {
     public int findFinalValue(int[] nums, int original) {
      
-        int val=original;
+       
         Map<Integer,Integer> mp = new HashMap<>();
         
             
@@ -12,12 +12,12 @@ class Solution {
         
         for(int i=0;i<nums.length;i++)
         {
-            if(mp.containsKey(val))
+            if(mp.containsKey(original))
             {
-                val = val*2;
+                original = original*2;
             }
         }
-        return val;
+        return original;
 
         
     }
