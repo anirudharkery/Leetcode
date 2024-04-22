@@ -18,13 +18,15 @@ class Solution {
         if ((m + n) % 2 == 0) {
             for (int i = 0; i < (m + n) / 2 - 1; ++i) {
                 int tmp = getMin(nums1, nums2);
+              System.out.print(tmp);   
             }
-            return (double)(getMin(nums1, nums2) + getMin(nums1, nums2)) / 2;
+            return (double) (getMin(nums1, nums2) + getMin(nums1, nums2)) / 2;
         } else {
             for (int i = 0; i < (m + n) / 2; ++i) {
                 int tmp = getMin(nums1, nums2);
             }
             return getMin(nums1, nums2);
-        }     
+        }   
+
     }
 }
