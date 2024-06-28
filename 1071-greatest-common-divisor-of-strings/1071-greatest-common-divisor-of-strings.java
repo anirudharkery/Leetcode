@@ -6,7 +6,7 @@ class Solution {
         
        int gcd = gcd(str1.length(),str2.length());
         
-        return str2.substring(0,gcd);
+        return str1.substring(0,gcd);
     }
     
     public int gcd(int a,int b)
